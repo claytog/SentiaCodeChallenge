@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6956CE4826424FB50089BD04 /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6956CE4726424FB50089BD04 /* ImageView+Extension.swift */; };
 		6986241F264216190007AFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986241E264216190007AFAC /* AppDelegate.swift */; };
 		69862421264216190007AFAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69862420264216190007AFAC /* SceneDelegate.swift */; };
-		69862423264216190007AFAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69862422264216190007AFAC /* ViewController.swift */; };
+		69862423264216190007AFAC /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69862422264216190007AFAC /* PropertiesViewController.swift */; };
 		69862426264216190007AFAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69862424264216190007AFAC /* Main.storyboard */; };
 		698624282642161A0007AFAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698624272642161A0007AFAC /* Assets.xcassets */; };
 		6986242B2642161A0007AFAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698624292642161A0007AFAC /* LaunchScreen.storyboard */; };
 		698624362642161A0007AFAC /* SentiaCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698624352642161A0007AFAC /* SentiaCodeChallengeTests.swift */; };
 		698624412642161A0007AFAC /* SentiaCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698624402642161A0007AFAC /* SentiaCodeChallengeUITests.swift */; };
+		698624522642177B0007AFAC /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698624512642177B0007AFAC /* Properties.swift */; };
+		69862455264218750007AFAC /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69862454264218750007AFAC /* HTTPClient.swift */; };
+		69862458264218F90007AFAC /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69862457264218F90007AFAC /* URL+Extension.swift */; };
+		6986245B26421D460007AFAC /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986245A26421D460007AFAC /* PropertyCell.swift */; };
+		6986245D26421DAD0007AFAC /* PropertyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6986245C26421DAD0007AFAC /* PropertyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6956CE4726424FB50089BD04 /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
 		6986241B264216190007AFAC /* SentiaCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentiaCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6986241E264216190007AFAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69862420264216190007AFAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		69862422264216190007AFAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69862422264216190007AFAC /* PropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewController.swift; sourceTree = "<group>"; };
 		69862425264216190007AFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		698624272642161A0007AFAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6986242A2642161A0007AFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		6986243C2642161A0007AFAC /* SentiaCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentiaCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		698624402642161A0007AFAC /* SentiaCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentiaCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		698624422642161A0007AFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		698624512642177B0007AFAC /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		69862454264218750007AFAC /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		69862457264218F90007AFAC /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		6986245A26421D460007AFAC /* PropertyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
+		6986245C26421DAD0007AFAC /* PropertyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,12 @@
 		6986241D264216190007AFAC /* SentiaCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				69862456264218CD0007AFAC /* Extensions */,
+				69862453264218610007AFAC /* Service */,
+				6986244E2642173E0007AFAC /* Model */,
 				6986241E264216190007AFAC /* AppDelegate.swift */,
 				69862420264216190007AFAC /* SceneDelegate.swift */,
-				69862422264216190007AFAC /* ViewController.swift */,
+				6986245926421D320007AFAC /* View */,
 				69862424264216190007AFAC /* Main.storyboard */,
 				698624272642161A0007AFAC /* Assets.xcassets */,
 				698624292642161A0007AFAC /* LaunchScreen.storyboard */,
@@ -126,6 +141,41 @@
 				698624422642161A0007AFAC /* Info.plist */,
 			);
 			path = SentiaCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		6986244E2642173E0007AFAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				698624512642177B0007AFAC /* Properties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69862453264218610007AFAC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				69862454264218750007AFAC /* HTTPClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		69862456264218CD0007AFAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				69862457264218F90007AFAC /* URL+Extension.swift */,
+				6956CE4726424FB50089BD04 /* ImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6986245926421D320007AFAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69862422264216190007AFAC /* PropertiesViewController.swift */,
+				6986245A26421D460007AFAC /* PropertyCell.swift */,
+				6986245C26421DAD0007AFAC /* PropertyCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +283,7 @@
 			files = (
 				6986242B2642161A0007AFAC /* LaunchScreen.storyboard in Resources */,
 				698624282642161A0007AFAC /* Assets.xcassets in Resources */,
+				6986245D26421DAD0007AFAC /* PropertyCell.xib in Resources */,
 				69862426264216190007AFAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69862423264216190007AFAC /* ViewController.swift in Sources */,
+				69862423264216190007AFAC /* PropertiesViewController.swift in Sources */,
+				69862455264218750007AFAC /* HTTPClient.swift in Sources */,
+				6956CE4826424FB50089BD04 /* ImageView+Extension.swift in Sources */,
+				698624522642177B0007AFAC /* Properties.swift in Sources */,
 				6986241F264216190007AFAC /* AppDelegate.swift in Sources */,
 				69862421264216190007AFAC /* SceneDelegate.swift in Sources */,
+				6986245B26421D460007AFAC /* PropertyCell.swift in Sources */,
+				69862458264218F90007AFAC /* URL+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
