@@ -29,6 +29,7 @@ class HTTPClient {
         print (url)
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
+        
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
 

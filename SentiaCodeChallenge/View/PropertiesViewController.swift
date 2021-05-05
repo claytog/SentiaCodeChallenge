@@ -15,6 +15,9 @@ class PropertiesViewController: UIViewController{
     private var httpClient = HTTPClient()
     private var activityView = UIActivityIndicatorView(style: .large)
     
+    private let propertyCell = "PropertyCell"
+    private let propertySegue = "propertySegue"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,14 +25,21 @@ class PropertiesViewController: UIViewController{
         propertiesTableView.delegate = self
         propertiesTableView.dataSource = self
         
-        propertiesTableView.register(UINib(nibName: "PropertyCell", bundle: nil), forCellReuseIdentifier: "PropertyCell")
-        
+        propertiesTableView.register(UINib(nibName: propertyCell, bundle: nil), forCellReuseIdentifier: propertyCell)
         propertiesTableView.tableFooterView = UIView()
         
         getProperties()
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PropertyViewController {
+            let senderProperty = sender as? Property
+            destination.propertyId = senderProperty?.id
+        }
+    }
+    
+    
     func getProperties(){
         
         activityView.center = self.view.center
@@ -64,33 +74,17 @@ extension PropertiesViewController : UITableViewDelegate,  UITableViewDataSource
         
         let property = properties?.data?[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PropertyCell", for: indexPath) as! PropertyCell
- 
+        let cell = tableView.dequeueReusableCell(withIdentifier: propertyCell, for: indexPath) as! PropertyCell
+        cell.setupView(cell, property)
         
-        // get thumbnail image from web service
-        if let imageURL = property?.propertyImages?[0].attachment?.url {
-            cell.propertyImage.setImageFromUrl(imageURL: imageURL, completion: { completed in
-            })
-        }
-        cell.addressLabel.text = property?.location?.address
-        if let bed = property?.bedrooms {
-            cell.bedLabel.text = String(bed)
-        }
-        if let bath = property?.bathrooms {
-            cell.bathLabel.text = String(bath)
-        }
-        if let car = property?.carspaces {
-            cell.carLabel.text = String(car)
-        }
-        if let firstName = property?.agent?.firstName, let lastName = property?.agent?.lastName {
-            cell.agentLabel.text = firstName + " " + lastName
-        }
-        // get thumbnail image from web service
-        if let imageURL = property?.agent?.avatar?.small?.url {
-            cell.avatarImage.setImageFromUrl(imageURL: imageURL, completion: { completed in
-            })
-        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let property = properties?.data?[indexPath.row]
+        
+        performSegue(withIdentifier: propertySegue, sender: property)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

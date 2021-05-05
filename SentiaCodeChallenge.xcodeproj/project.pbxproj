@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6956CE4826424FB50089BD04 /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6956CE4726424FB50089BD04 /* ImageView+Extension.swift */; };
+		6956CE4A2642897F0089BD04 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6956CE492642897F0089BD04 /* PropertyViewController.swift */; };
 		6986241F264216190007AFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986241E264216190007AFAC /* AppDelegate.swift */; };
 		69862421264216190007AFAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69862420264216190007AFAC /* SceneDelegate.swift */; };
 		69862423264216190007AFAC /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69862422264216190007AFAC /* PropertiesViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		6956CE4726424FB50089BD04 /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
+		6956CE492642897F0089BD04 /* PropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
 		6986241B264216190007AFAC /* SentiaCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentiaCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6986241E264216190007AFAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69862420264216190007AFAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				69862422264216190007AFAC /* PropertiesViewController.swift */,
 				6986245A26421D460007AFAC /* PropertyCell.swift */,
 				6986245C26421DAD0007AFAC /* PropertyCell.xib */,
+				6956CE492642897F0089BD04 /* PropertyViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				6986241F264216190007AFAC /* AppDelegate.swift in Sources */,
 				69862421264216190007AFAC /* SceneDelegate.swift in Sources */,
 				6986245B26421D460007AFAC /* PropertyCell.swift in Sources */,
+				6956CE4A2642897F0089BD04 /* PropertyViewController.swift in Sources */,
 				69862458264218F90007AFAC /* URL+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.SentiaCodeChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -518,6 +523,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.SentiaCodeChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

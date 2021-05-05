@@ -13,7 +13,7 @@ extension URL {
     
     static func getProperties() -> URL? {
         
-        return URL(string: host )
+        return URL(string: host)
     }
    
 
