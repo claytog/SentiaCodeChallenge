@@ -31,6 +31,9 @@ class SentiaCodeChallengeTests: XCTestCase {
     }
     
     func testDecoder() throws {
+        /*
+         This test case is to test the decoding of the web service payload, where the example data is found in the file "TestData.json".
+         */
         
         let jsonData =  Util.readJSON(fileName: "TestData")
         
