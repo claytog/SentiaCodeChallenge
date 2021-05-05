@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Properties View Controller-->
+        <!--Properties-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PropertiesViewController" customModule="SentiaCodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,16 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-2t-rUv">
-                                <rect key="frame" x="0.0" y="88" width="422" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-2t-rUv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iy2-2t-rUv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ADg-6Q-MvK"/>
+                            <constraint firstItem="Iy2-2t-rUv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LLm-Hj-nUP"/>
+                            <constraint firstItem="Iy2-2t-rUv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TTA-hP-7Ub"/>
+                            <constraint firstItem="Iy2-2t-rUv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kIn-hb-zIm"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qYV-t0-Rfa"/>
+                    <navigationItem key="navigationItem" title="Properties" id="qYV-t0-Rfa"/>
                     <connections>
                         <outlet property="propertiesTableView" destination="Iy2-2t-rUv" id="cHb-np-qh6"/>
                         <segue destination="Vr3-e8-ZfR" kind="show" identifier="propertySegue" id="OKL-Xf-vx0"/>
@@ -33,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="94.419642857142847"/>
+            <point key="canvasLocation" x="991" y="94"/>
         </scene>
         <!--Property View Controller-->
         <scene sceneID="YCj-OU-l6h">
