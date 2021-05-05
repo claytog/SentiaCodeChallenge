@@ -29,5 +29,24 @@ class SentiaCodeChallengeTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testDecoder() throws {
+        
+        let jsonData =  Util.readJSON(fileName: "TestData")
+        
+        if let data = jsonData, let utf8Text = String(data: data, encoding: .utf8) {
+            print("Test data: \(utf8Text)")
+        }
+
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+
+        let propertiesDetail = try? decoder.decode(Properties.self, from: jsonData!)
+
+        let property = propertiesDetail?.data?[0]
+        
+        XCTAssertTrue(property?.id == "1")
+            
+    }
 
 }
