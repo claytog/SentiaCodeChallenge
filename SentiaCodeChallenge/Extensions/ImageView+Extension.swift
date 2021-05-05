@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    
+    // fetch image from a web service endpoint
     func setImageFromUrl(imageURL :String, completion : @escaping (Bool)->()){
        URLSession.shared.dataTask( with: NSURL(string:imageURL)! as URL, completionHandler: {
           (data, response, error) -> Void in
