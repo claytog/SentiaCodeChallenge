@@ -19,7 +19,7 @@ enum ShiftType: String {
 }
 
 class HTTPClient {
-    
+    // returns a list of properties from the web service endpoint
     func getProperties(completion: @escaping (Result<Properties, NetworkError>) -> Void) {
         
         guard let url = URL.getProperties() else{
