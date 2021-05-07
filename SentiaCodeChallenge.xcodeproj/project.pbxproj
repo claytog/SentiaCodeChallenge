@@ -24,6 +24,7 @@
 		69862458264218F90007AFAC /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69862457264218F90007AFAC /* URL+Extension.swift */; };
 		6986245B26421D460007AFAC /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986245A26421D460007AFAC /* PropertyCell.swift */; };
 		6986245D26421DAD0007AFAC /* PropertyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6986245C26421DAD0007AFAC /* PropertyCell.xib */; };
+		69D3EB892644BC7500010E5A /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 69D3EB882644BC7500010E5A /* TestData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		69862457264218F90007AFAC /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		6986245A26421D460007AFAC /* PropertyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
 		6986245C26421DAD0007AFAC /* PropertyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyCell.xib; sourceTree = "<group>"; };
+		69D3EB882644BC7500010E5A /* TestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TestData.json; path = ../../../.Trash/TestData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		698624342642161A0007AFAC /* SentiaCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				69D3EB882644BC7500010E5A /* TestData.json */,
 				698624352642161A0007AFAC /* SentiaCodeChallengeTests.swift */,
 				698624372642161A0007AFAC /* Info.plist */,
 			);
@@ -307,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69D3EB892644BC7500010E5A /* TestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
